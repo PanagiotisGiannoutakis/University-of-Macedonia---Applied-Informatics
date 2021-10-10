@@ -1,0 +1,513 @@
+======================================================== Προγραμματισμός Συστημάτων ============================================================
+
+=============================================================== Εργασία 01 =====================================================================
+
+Ονοματεπώνυμο: Παναγιώτης Γιαννουτάκης
+ΑΜ: 38/12
+email: it1238@uom.edu.gr
+
+================================================================================================================================================
+
+ΑΣΚΗΣΗ 1: Εισαγωγή στην γραμμή εντολών =========================================================================================================
+1. 
+it1238@snf-622:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+2.
+it1238@snf-622:~$ echo $SHELL
+/bin/bash
+3.
+it1238@snf-622:~$ passwd
+Changing password for it1238.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+4.
+it1238@snf-622:~$ date
+Wed Mar  9 19:46:38 EET 2016
+it1238@snf-622:~$ who
+it1238   pts/1        Mar  9 18:51 (adsl-42.109.242.188.tellas.gr)
+it1238@snf-622:~$ whoami
+it1238
+it1238@snf-622:~$ clear
+5.
+it1238@snf-622:~$ whoa
+Sorry, command-not-found has crashed! Please file a bug report at:
+https://bugs.launchpad.net/command-not-found/+filebug
+Please include the following information with the report:
+
+command-not-found version: 0.2.44
+
+Η εντολή whoa δεν υπάρχει οπότε το σύστημα μας εμφανίζει κατάλληλο μήνυμα.
+6.
+it1238@snf-622:~$ date; who; cal
+Wed Mar  9 19:52:52 EET 2016
+it1238   pts/1        Mar  9 19:50 (adsl-42.109.242.188.tellas.gr)
+cal: setlocale: No such file or directory
+     March 2016       
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30 31        
+                
+Αυτό που συμβαίνει είναι ότι ο φλοιός εκτελεί την μια εντολή μετά την άλλη και εμφανίζει τα αποτελέσματα με την σειρά που εκτελέστηκαν οι εντολές.
+
+7.
+it1238@snf-622:~$ WHO
+Sorry, command-not-found has crashed! Please file a bug report at:
+https://bugs.launchpad.net/command-not-found/+filebug
+Please include the following information with the report:
+it1238@snf-622:~$ CAL 2015
+Sorry, command-not-found has crashed! Please file a bug report at:
+https://bugs.launchpad.net/command-not-found/+filebug
+Please include the following information with the report:
+it1238@snf-622:~$ DATE
+Sorry, command-not-found has crashed! Please file a bug report at:
+https://bugs.launchpad.net/command-not-found/+filebug
+Please include the following information with the report:
+
+Οι εντολές στο linux είναι case sensitive, δηλαδή είναι διαφορετικές αν κάποια από τα γράμματα που τις αποτελούν είναι κεφαλαία αντί για πεζά και το αντίθετο. Στην συγκεκριμένη περίπτωση και οι 3 εντολές με κεφαλαία δεν αναγνωρίζονται από το σύστημα, ενώ με μικρά δουλεύουν κανονικά.
+
+8.
+cal -m 2
+cal: setlocale: No such file or directory
+   February 2016      
+Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29                
+
+Με το όρισμα -m και έναν δεκαδικό αριθμό μέχρι το 12, εμφανίζει τον ημερολογιακό μήνα που αντιστοιχεί στον αριθμό του ορίσματος που επιλέξαμε.
+
+it1238@snf-622:~$ date +"%m-%d-%y"
+03-09-16
+
+Με το όρισμα αυτό εμφανίζουμε την ημερομηνία σε μορφή μήνας/μέρα/χρόνος με δύο δεκαδικά ψηφία για κάθε ημερολογιακή οντότητα.
+
+9.
+it1238@snf-622:~$ man man
+
+10.
+it1238@snf-622:~$ logout
+Connection to 83.212.96.205 closed.
+
+ΑΣΚΗΣΗ 2: Διαχείρηση αρχείων, καταλόγων, δικαιωμάτων ==========================================================================================
+2.
+it1238@snf-622:~$ cd blah
+-bash: cd: blah: No such file or directory
+
+Το σύστημα ενημερώνει πως δεν υπάρχει διαδρομή blah.
+
+3.
+it1238@snf-622:~$ cd ..
+it1238@snf-622:/home$ ls
+it10129  it1238   it1328  it1352  it1386   it14226  pdpuser
+it1199	 it1269   it1332  it1369  it1398   it145    user
+it12112  it13130  it1334  it1373  it14216  it1495
+
+Μας μεταφέρει ένα επίπεδο πιο πάνω στην διαδρομή του σύστηματος αρχείων στην οποίο βρισκόμαστε.
+
+4.
+it1238@snf-622:/home$ pwd
+/home
+it1238@snf-622:/home$ cd
+it1238@snf-622:~$ pwd
+/home/it1238
+
+Με την εντολή cd χωρίς ορίσματα μεταφερόμαστε πάντα στον οικείο μας κατάλογο.
+
+5.
+it1238@snf-622:~$ cd /root
+-bash: cd: /root: Permission denied
+
+Το σύστημα δεν μας επιτρέπει να έχουμε πρόσβαση στον κατάλογο /root γιατί αυτός είναι ο προσωπικός φάκελος του διαχειριστή του συστήματος και πρέπει να μας έχει δώσει δικαιώματα πρόσβασης ο διαχειριστής για να μπορούμε να μπούμε, κάτι που δεν συμβαίνει στην προκειμένη περίπτωση. Ένας τρόπος για να μπούμε είναι να αλλάξουμε τον κωδικό του χρήστη root με την εντολή sudo passwd root. Και μετά με την εντολή su root να μπούμε στο σύστημα σαν διαχειριστής και από εκεί να έχουμε πρόσβαση σε οποιοδήποτε μέρος του συστήματος θέλουμε. Δεν το δοκίμασα για να μην χαλάσω κάποιον κωδικό από τον server :p
+
+6.
+it1238@snf-622:~$ pwd
+/home/it1238
+
+7.
+it1238@snf-622:~$ cd ../it1334
+it1238@snf-622:/home/it1334$ ls
+
+8.
+it1238@snf-622:/tmp$ cd /var
+it1238@snf-622:/var$ 
+
+9.
+it1238@snf-622:/var$ cd /usr/share
+it1238@snf-622:/usr/share$ 
+
+10.
+it1238@snf-622:~$ mkdir newFolder
+it1238@snf-622:~$ mv ~/newFolder /home/
+mv: cannot move `/home/it1238/newFolder' to `/home/newFolder': Permission denied
+
+Το σύστημα δεν μας επιτρέπει να μετακινήσουμε τον φάκελο που δημιουργήσαμε στον φάκελο που βρίσκεται ο οικείος μας κατάλογος λόγο περιορισμού δικαιωμάτων πρόσβασης που έχουμε στον συγκεκριμένο φάκελο (/home/)
+
+11.
+it1238@snf-622:~$ cp -r /etc ~/newFolder
+cp: cannot open `/etc/group-' for reading: Permission denied
+cp: cannot access `/etc/chatscripts': Permission denied
+cp: cannot open `/etc/ssh/ssh_host_dsa_key' for reading: Permission denied
+..................
+it1238@snf-622:~$ cd newFolder/etc/
+it1238@snf-622:~/newFolder/etc$ ls
+ConsoleKit		       gnome-settings-daemon  pam.conf
+NetworkManager		       gnome-system-tools     pam.d
+..................
+it1238@snf-622:~/newFolder/etc$ cd ConsoleKit
+it1238@snf-622:~/newFolder/etc/ConsoleKit$ ls
+run-seat.d  run-session.d  seats.d
+
+Μερικά αρχεία που βρίσκονται στον κατάλογο /etc έχουν περιορισμένα δικαιώματα πρόσβασης για τους απλούς χρήστες και έτσι δεν έγινε η αντιγραφή τους στον φάκελο μας. Με sudo θα γινόταν.
+
+12.
+it1238@snf-622:~$ rm -r newFolder
+it1238@snf-622:~$ ls
+
+13.
+it1238@snf-622:~$ mkdir newFolder
+it1238@snf-622:~$ cp -r /usr/share/pixmaps/*.xpm newFolder
+it1238@snf-622:~$ ls newFolder
+aisleriot.xpm	     gnome-eog.xpm	 rhythmbox-small.xpm
+banshee.xpm	     gnome-grecord.xpm	 thunderbird.xpm
+baobab.xpm	     gnome-mixer.xpm	 tomboy-16.xpm
+....................
+
+14.
+it1238@snf-622:~/newFolder$ ls -r
+xterm_48x48.xpm        pstree32.xpm	    gedit-icon.xpm
+xterm_32x32.xpm        pstree16.xpm	    geany.xpm
+xterm-color_48x48.xpm  pppoeconf.xpm	    gcalctool.xpm
+.................
+
+15.
+it1238@snf-622:~$ touch test1 test2
+it1238@snf-622:~$ ls -i
+1762464 newFolder  1762512 test1  1762513 test2
+it1238@snf-622:~$ cp test1 test3
+it1238@snf-622:~$ mv test2 test4
+it1238@snf-622:~$ ls -i
+1762464 newFolder  1762512 test1  1762514 test3  1762513 test4
+
+Βλέπουμε ότι το test4 πήρε το inode του test2 και το test3 πήρε το αμέσως επόμενο inode μετά το test2.
+
+16.
+it1238@snf-622:~$ ln -s test4 mySoftLink
+it1238@snf-622:~$ ln test4 myHardLink
+it1238@snf-622:~$ ls -i
+1762513 myHardLink  1762464 newFolder  1762514 test3
+1762515 mySoftLink  1762512 test1      1762513 test4
+
+Βλέπουμε πως το softlink πήρε το αμέσως επόμενο διαθέσιμο i-node ενώ το hardlink πήρε το ίδιο i-node με το test4.
+
+17.
+it1238@snf-622:~$ cd ..
+it1238@snf-622:/home$ ls -l
+total 84
+drwxr-xr-x  3 it10129 it10129 4096 Mar  5 18:57 it10129
+it1238@snf-622:/home$ chmod u-w it10129
+chmod: changing permissions of `it10129': Operation not permitted
+
+18.
+it1238@snf-622:~$ ls -l
+-rw-rw-r-- 1 it1238 it1238    0 Mar  9 21:50 test1
+it1238@snf-622:~$ chmod o-r test1
+it1238@snf-622:~$ ls -l
+-rw-rw---- 1 it1238 it1238    0 Mar  9 21:50 test1
+
+19.
+it1238@snf-622:~$ chmod u+x test1
+it1238@snf-622:~$ ls -l
+-rwxrw---- 1 it1238 it1238    0 Mar  9 21:50 test1
+
+20.
+it1238@snf-622:~$ chmod u-x,o+r test1
+it1238@snf-622:~$ ls -l
+-rw-rw-r-- 1 it1238 it1238    0 Mar  9 21:50 test1
+
+21.
+it1238@snf-622:~$ chmod 760 test1
+it1238@snf-622:~$ ls -l
+-rwxrw---- 1 it1238 it1238    0 Mar  9 21:50 test1
+it1238@snf-622:~$ chmod 664 test1
+it1238@snf-622:~$ ls -l
+-rw-rw-r-- 1 it1238 it1238    0 Mar  9 21:50 test1
+
+Αναπαράσταση της παραπάνω διαδικασίας με χρήση χαρακτήρων έγινε στα βήματα 18-19-20.
+
+22.
+it1238@snf-622:~$ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda1        40G  4.1G   34G  11% /
+
+23.
+it1238@snf-622:~$ sudo fdisk -l
+[sudo] password for it1238: 
+it1238 is not in the sudoers file.  This incident will be reported.
+
+Επειδή δεν έχουμε δικαίωμα υπερχρήστη δεν μπορούμε να τρέξουμε την εντολή fdisk -l για να δούμε τα partitions του συστήματος.
+
+24.
+Απάντηση δεν μπορεί να δωθεί για τον ίδιο λόγο με το ερώτημα 23.
+
+25.
+it1238@snf-622:~$ df -h -B MB
+df: `/var/lib/lightdm/.gvfs': Permission denied
+Filesystem     1MB-blocks   Used Available Use% Mounted on
+/dev/vda1         42606MB 4393MB   36066MB  11% /
+
+26.
+it1238@snf-622:~$ du -hs /usr/share/pixmaps
+1.3M	/usr/share/pixmaps
+
+Το όρισμα h είναι για human readable και το s για να μετρήσει και το μέγεθος των υποφακέλων, συνολικά όλα δηλαδή.
+
+ΑΣΚΗΣΗ 3: Σύνθετες αναζητήσεις ================================================================================================================
+
+1.
+it1238@snf-622:~$ mkdir newFolder
+it1238@snf-622:~$ cd newFolder
+it1238@snf-622:~/newFolder$ touch feb96 jan12.02 jan19.02 jan26.02 jan5.02 jan95 jan96 jan97 jan98 mar98 memo1 memo10 memo2 memo2.sv
+it1238@snf-622:~/newFolder$ ls *
+feb96	  jan19.02  jan5.02  jan96  jan98  memo1   memo2
+jan12.02  jan26.02  jan95    jan97  mar98  memo10  memo2.sv
+
+Εμφανίζει όλα τα αρχεία που υπάρχουν στον κατάλογο.
+
+it1238@snf-622:~/newFolder$ ls m[a-df-z]*
+mar98
+
+Εμφανίζει τα αρχεία που το όνομα τους ξεκινάει από τον χαρακτήρα m, στην συνέχεια ο επόμενος χαρακτήρας είναι ένας από τους a,b,c,d και το επόμενος ανήκει στο εύρος χαρακτήρων ανάμεσα στο γραμα f και z. Μετά μπορεί να έχει οποιονδήποτε χαρακτήρα.
+
+it1238@snf-622:~/newFolder$ ls jan*
+jan12.02  jan19.02  jan26.02  jan5.02  jan95  jan96  jan97  jan98
+
+Εμφανίζει τα αρχεία που το όνομα τους αρχίζει από jan και μετά έχουν οποιονδήποτε χαρακτήρα - ή και κανέναν.
+
+it1238@snf-622:~/newFolder$ ls ?????
+feb96  jan95  jan96  jan97  jan98  mar98  memo1  memo2
+
+Εμφανίζει τα αρχεία που το όνομα τους αποτελείται ακριβώς από 5 χαρακτήρες. Οι χαρακτήρες μπορεί να είναι οποιηδήποτε.
+
+it1238@snf-622:~/newFolder$ ls jan?? feb?? mar??
+feb96  jan95  jan96  jan97  jan98  mar98
+
+Εμφανίζει τα αρχεία που το όνομα τους αρχίζει είτε από jan ακολουθούμενο από 2 οποιουσδήποτε χαρακτήρες, είτε από feb ακολουθούμενο από 2 οποιουσδήποτε χαρακτήρες, είτε από mar ακολουθούμενο από 2 οποιουσδήποτε χαρακτήρες.
+
+it1238@snf-622:~/newFolder$ ls *[!0-9]
+memo2.sv
+
+Εμφανίζει τα αρχεία που το όνομα τους δεν τελειώνει σε ψηφίο. Αν και προσωπικά ήξερα πως η άρνηση μιας λίστας συμβολίζεται με το ^. Εκτός και αν δίνω λάθος ερμηνεία στο αποτέλεσμα.
+
+it1238@snf-622:~/newFolder$ ls [A-Z]*
+feb96	  jan19.02  jan5.02  jan96  jan98  memo1   memo2
+jan12.02  jan26.02  jan95    jan97  mar98  memo10  memo2.sv
+
+Εμφανίζει όλα τα αρχεία που το όνομα τους αρχίζει από κεφαλαίο γράμμα, μηδέν, μια ή περισσότερες φορές. Στην συγκεκριμένη περίπτωση εμφανίζει όλα τα αρχεία του φακέλου επειδή αρχίζουν όλα μηδέν φορές με κεφαλαίο γράμμα.
+
+it1238@snf-622:~/newFolder$ ls *.*
+jan12.02  jan19.02  jan26.02  jan5.02  memo2.sv
+
+Εμφανίζει όλα τα αρχεία που το όνομα τους, πριν από το τελευταίο αλφαριθμητικό και μετά από το πρώτο εμφανίζεται ο χαρακτήρας ..
+
+it1238@snf-622:~/newFolder$ ls *02
+jan12.02  jan19.02  jan26.02  jan5.02
+
+Εμφανίζει όλα τα αρχεία που το όνομα τους τελειώνει σε 02.
+
+it1238@snf-622:~/newFolder$ ls [fjm][ae][bnr]*
+feb96  jan12.02  jan19.02  jan26.02  jan5.02  jan95  jan96  jan97  jan98  mar98
+
+Εμφανίζει όλα τα αρχεία που το όνομα τους αρχίζει με ένα από τα f,j,m, το δεύτερο γράμμα είναι ένα από τα a,e και το τρίτο γράμμα είναι ένα από τα b,n ή r.
+
+2.
+it1238@snf-622:~$ mkdir sports
+it1238@snf-622:~$ cd sports
+it1238@snf-622:~/sports$ touch baseball football golf tennis volleyball soccer
+a.
+it1238@snf-622:~/sports$ ls *ball
+baseball  football  volleyball
+b.
+it1238@snf-622:~/sports$ ls ????ball
+baseball  football
+c.
+it1238@snf-622:~/sports$ ls [a-z]*
+baseball  football  golf  soccer  tennis  volleyball
+d.
+it1238@snf-622:~/sports$ ls *o*
+football  golf	soccer	volleyball
+
+ΑΣΚΗΣΗ 4: Διεργασίες, Μνήμη, Χρονοπρογραμματισμός =============================================================================================
+1.
+it1238@snf-622:~$ top
+
+top - 01:15:54 up 37 days, 11:28,  1 user,  load average: 0.00, 0.01, 0.05
+Tasks: 102 total,   1 running, 101 sleeping,   0 stopped,   0 zombie
+Cpu(s):  1.0%us,  0.3%sy,  0.0%ni, 98.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   1019400k total,   728688k used,   290712k free,   156120k buffers
+Swap:        0k total,        0k used,        0k free,   378928k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND           
+ 2193 root      20   0  152m  18m 2500 S  0.3  1.8 241:44.58 Xorg               
+ 2225 lightdm   20   0  675m  18m 7940 S  0.3  1.9 251:35.82 unity-greeter      
+23122 it1238    20   0 90244 1872  900 S  0.3  0.2   0:00.38 sshd               
+    1 root      20   0 24580 2364 1236 S  0.0  0.2   0:12.26 init 
+
+3 διεργασίες που καταλαμβάνουν μεγάλο φόρτο της cpu είναι η Xorg, unity-greeter και sshd. Επίσης αυτές οι 3 διεργασίες καταλαμβάνουν και το μεγαλύτερο μέρος της μνήμης. Για να σκοτώσουμε μια διεργασία μέσω της top, πατάμε το πλήκτρο k και μετά εισάγουμε τον αριθμό pid της διεργασίας που θέλουμε να σκοτώσουμε. Μετά πληκτρολογούμε τον αριθμό του σήματος που θα γίνει ο τερματισμός (συνήθως το 9) και η δολοφονία ολοκληρώθηκε. Για να αλλάξουμε την προταιρεότητα μιας διεργασίας μέσω της top, πληκτρολογούμε το r, μετά εισάγουμε τον αριθμό της διεργασίας που θέλουμε να γίνει η αλλαγή και μετά πληκτρολογούμε τον αριθμό ωραιοποίησης (nice) που θέλουμε να δώσουμε στην διεργασία. Ψηλός βαθμός (+19) σημαίνει ότι η διεργασία είναι φιλική και δεν καταναλώνει σημαντικούς πόρους του συστήματος οπότε δεν χρειάζεται να από τις πρώτες επιλογές της cpu.
+
+2.
+it1238@snf-622:~$ ps
+  PID TTY          TIME CMD
+23123 pts/1    00:00:00 bash
+23765 pts/1    00:00:00 ps
+it1238@snf-622:~$ ps -eLf
+UID        PID  PPID   LWP  C NLWP STIME TTY          TIME CMD
+root         1     0     1  0    1 Feb01 ?        00:00:12 /sbin/init
+root         2     0     2  0    1 Feb01 ?        00:00:00 [kthreadd]
+root         3     2     3  0    1 Feb01 ?        00:00:54 [ksoftirqd/0]
+................
+
+3.
+it1238@snf-622:~$ free -m
+             total       used       free     shared    buffers     cached
+Mem:           995        773        221          0        152        431
+-/+ buffers/cache:        189        806
+Swap:            0          0          0
+
+4.
+it1238@snf-622:~$ pstree
+init-+-NetworkManager-+-dhclient
+     |                |-dnsmasq
+     |                `-2*[{NetworkManager}]
+     |-accounts-daemon---{accounts-daemon}
+
+5.
+it1238@snf-622:~$ xclock &
+[1] 23882
+it1238@snf-622:~$ Error: Can't open display: 
+kill -9 23882
+-bash: kill: (23882) - No such process
+[1]+  Exit 1                  xclock
+
+6.
+it1238@snf-622:~$ xcalc &
+[1] 23884
+it1238@snf-622:~$ Error: Can't open display: 
+
+Με την εντολή jobs βλέπουμε τις διεργασίες που τρέχουν στο παρασκήνιο.
+
+7.
+it1238@snf-622:~$ which grep
+/bin/grep
+
+8.
+it1238@snf-622:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+9.
+it1238@snf-622:~$ env
+LC_PAPER=el_GR.UTF-8
+LC_ADDRESS=el_GR.UTF-8
+LC_MONETARY=el_GR.UTF-8
+TERM=xterm
+SHELL=/bin/bash
+..........
+
+10.
+it1238@snf-622:~$ runlevel
+N 2
+it1238@snf-622:~$ service --status-all
+ [ ? ]  acpi-support
+ [ ? ]  acpid
+ [ ? ]  alsa-restore
+ [ ? ]  alsa-store
+ [ ? ]  anacron
+.........
+
+11.
+it1238@snf-622:~$ at now + 30 min
+warning: commands will be executed using /bin/sh
+at> mkdir new
+at> cp -r ~/* ~/new         
+at> <EOT>
+job 16 at Sun Mar 13 23:20:00 2016
+
+12.
+it1238@snf-622:~$ crontab -l
+00 12 * * 1-5 mkdir new
+00 12 * * 1-5 cp -r ~/* ~/new
+
+ΑΣΚΗΣΗ 5: Συμπίεση, Αρχειοθέτηση, Απομακρυσμένη Πρόσβαση ======================================================================================
+
+1.α.
+Στον τοπικό διαχειριστή συστήματος αρχείων πατάμε στο κουμπί Connect to Server και από εκεί στο πεδίο Server Address πληκτρολογούμε sftp://83.212.96.205/home/user. Μετά με drag and drop μεταφέρουμε τον φάκελο.
+
+1.β.
+[panagiotis][~/Desktop]:scp units.tar.gz it1238@83.212.96.205:/home/it1238/
+it1238@83.212.96.205's password: 
+units.tar.gz                                  100%  174KB 174.1KB/s   00:00 
+
+Η αντιγραφή από τον προσωπικό μου σύστημα στον απομακρυσμένο υπολογιστή.
+
+1.γ.
+it1238@snf-622:~$ scp units.tar.gz panagiotis@176.58.205.241:/home/panagiotis/
+ssh: connect to host 176.58.205.241 port 22: Connection refused
+lost connection
+
+Δεν επιτρέπεται η σύνδεση με ssh από τον απομακρυσμένο υπολογιστή.
+
+2.
+it1238@snf-622:~$ tar xvzf units.tar.gz
+home/it1238/new/
+home/it1238/new/new/
+home/it1238/new/test3
+home/it1238/new/test4
+home/it1238/new/mySoftLink
+........
+
+3.
+
+
+ΑΣΚΗΣΗ 6: Απομακρυσμένη Πρόσβαση, Εφεδρικά Αντίγραφα ==========================================================================================
+
+1.
+it1238@snf-622:~$ mkdir source dest
+
+2.
+it1238@snf-622:~$ touch source/file1 source/file2
+
+3.
+it1238@snf-622:~$ rsync -r source/ dest
+it1238@snf-622:~$ ls dest
+file1  file2
+
+4.
+it1238@snf-622:~$ touch source/file3
+
+5.
+it1238@snf-622:~$ rsync source/file3 dest
+it1238@snf-622:~$ ls dest
+file1  file2  file3
+
+6.
+it1238@snf-622:~$ ls > source/file1
+
+7.
+it1238@snf-622:~$ rsync source/file1 dest
+
+8.
+[panagiotis][~]:rsync -a ~/file1 it1238@83.212.96.205:/home/it1238/
+it1238@83.212.96.205's password:
+
+Στο παράδειγμα μεταφέραμε ένα αρχείο με όνομα file1 από τον προσωπικό μας υπολογιστή στον απομακρυσμένο υπολογιστή στην διαδρομή /home/it1238/.
+

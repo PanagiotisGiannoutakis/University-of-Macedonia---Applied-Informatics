@@ -1,0 +1,411 @@
+Λειτουργικά Συστήματα
+Εργασία 1
+
+Ονοματεπώνυμο: Παναγιώτης Γιαννουτάκης
+ΑΜ: 38/12
+email: it1238@uom.edu.gr
+
+Στην άσκηση θα παρατίθεται η εντολή που χρησιμοποιήθηκε και τα αποτελέσματα που εμφάνισε στο τερματικό. Εντολές στις οποίες το αποτέλεσμα είναι μεγάλο σε έκταση και αναμενόμενο-ίδιο τις περισσότερες φορές, όπως για παράδειγμα εντολές man, top κτλ, θα παρατίθεται μέρος του αποτελέσματος ή και καθόλου και στο τέλος θα μπαίνουν τελείες (. . .) για να δηλώνεται ότι δεν είναι τα πλήρη αποτελέσματα. Όπου κρίνεται σκόπιμο, θα υπάρχουν μερικά σχόλια για επεξήγηση της εντολής.
+
+.............................................................
+
+1. ΛΗΨΗ ΒΟΗΘΕΙΑΣ
+1) [panagiotis][~]:man passwd
+. . .
+
+[panagiotis][~]:apropos passwd
+chgpasswd (8)        - update group passwords in batch mode
+chpasswd (8)         - update passwords in batch mode
+Crypt::PasswdMD5 (3pm) - Provides interoperable MD5-based crypt() functions
+fgetpwent_r (3)      - get passwd file entry reentrantly
+. . .
+
+[panagiotis][~]:whatis passwd
+passwd (5)           - the password file
+passwd (1)           - change user password
+passwd (1ssl)        - compute password hashes
+
+2) [panagiotis][~]:whatis fork
+fork (2)             - create a child process
+[panagiotis][~]:whatis exec
+exec (3)             - execute a file
+[panagiotis][~]:whatis exit
+exit (2)             - terminate the calling process
+exit (3)             - cause normal process termination
+[panagiotis][~]:whatis wait
+wait (2)             - wait for process to change state
+
+...............................................................
+
+2. ΑΛΛΑΓΗ ΚΑΤΑΛΟΓΟΥ
+1) [panagiotis][~]:cd blah
+bash: cd: blah: No such file or directory
+
+2) [panagiotis][~]:pwd
+/home/panagiotis
+[panagiotis][~]:cd ..
+[panagiotis][/home]:pwd
+/home
+
+3) [panagiotis][/home]:pwd
+/home
+[panagiotis][/home]:cd
+[panagiotis][~]:pwd
+/home/panagiotis
+
+4) [panagiotis][~]:cd root
+bash: cd: root: No such file or directory
+[panagiotis][~]:cd /root
+bash: cd: /root: Permission denied
+[panagiotis][~]:sudo -s
+[root][~]:cd /root
+[root][/root]:pwd
+/root
+
+Όταν είμαστε συνδεδεμένοι σαν απλοί χρήστες, δεν έχουμε δικαίωμα πρόσβασης στον υποκατάλογο /root. Για να μπορέσουμε να έχουμε πρόσβαση σε αυτόν τον κατάλογο, ανοίγουμε ένα κέλυφος υπερχρήστη (εντολή sudo -s) και μετά μπαίνουμε χωρίς πρόβλημα στον φάκελο /root.
+
+..................................................................
+
+3. ΔΙΑΔΡΟΜΕΣ
+
+1) [panagiotis][~]:pwd
+/home/panagiotis
+
+2) [panagiotis][~]:pwd
+/home/panagiotis
+[panagiotis][~]:cd ../newuser
+[panagiotis][/home/newuser]:pwd
+/home/newuser
+
+3) [panagiotis][/tmp]:cd /var
+
+4) [panagiotis][/var]:cd /usr/share
+[panagiotis][/usr/share]:pwd
+/usr/share
+
+....................................................................
+
+4. ΔΙΑΧΕΙΡΙΣΗ ΑΡΧΕΙΩΝ
+
+1) [panagiotis][~]:mkdir newDirection
+[panagiotis][~]:mv newDirection ..
+mv: cannot move ‘newDirection’ to ‘../newDirection’: Permission denied
+
+2) [panagiotis][~]:sudo cp -r /etc newDirection
+[sudo] password for panagiotis: 
+[panagiotis][~]:ls newDirection
+etc
+[panagiotis][~]:ls newDirection/etc
+acpi                           hosts.deny               python
+adduser.conf                   hp                       python2.7
+adjtime                        ifplugd                  python3
+alternatives                   init                     python3.4
+anacrontab                     init.d                   quotagrpadmins
+. . .
+
+3) [panagiotis][~]:sudo rm -fr newDirection
+[panagiotis][~]:cd newDirection
+bash: cd: newDirection: No such file or directory
+
+4) [panagiotis][~]:cp /usr/share/pixmaps/*.xpm newDirection
+[panagiotis][~]:ls newDirection
+aisleriot.xpm           mini.xterm_48x48.xpm  rhythmbox-small.xpm
+baobab.xpm              nautilus.xpm          seahorse.xpm
+evince.xpm              openjdk-7.xpm         thunderbird.xpm
+file-roller.xpm         pppoeconf.xpm         totem.xpm
+. . .
+
+5) [panagiotis][~]:ls -c newDirection
+xterm_32x32.xpm        python3.xpm           gnome-terminal.xpm
+xterm_48x48.xpm        python.xpm            gnome-eog.xpm
+xterm-color_32x32.xpm  python2.7.xpm         gedit-icon.xpm
+
+6) [panagiotis][~]:touch test1 test2
+[panagiotis][~]:ls -i
+. . .
+2450040 test1
+2450041 test2
+. . .
+[panagiotis][~]:cp test1 test3
+[panagiotis][~]:mv test2 test4
+[panagiotis][~]:ls -i
+. . .
+2450040 test1
+2450092 test3
+2450041 test4
+. . .
+
+7) [panagiotis][~]:ln -s test4 softLink
+[panagiotis][~]:ln test4 hardLink
+[panagiotis][~]:ls -i
+. . .
+2449762 softLink
+2450041 hardLink          
+2450040 test1
+2450092 test3
+2450041 test4
+. . .
+
+.....................................................................
+
+5. ΑΔΕΙΕΣ ΠΡΟΣΒΑΣΗΣ ΑΡΧΕΙΩΝ
+
+1) [panagiotis][~]:ls -l /home
+total 8
+drwxr-xr-x  2 newuser    newuser    4096 Μάρ  15 22:48 newuser
+drwxr-xr-x 27 panagiotis panagiotis 4096 Μάρ  16 00:28 panagiotis
+[panagiotis][~]:chmod g+w /home/newuser
+chmod: changing permissions of ‘/home/newuser’: Operation not permitted
+[panagiotis][~]:chmod g+w /home/panagiotis
+[panagiotis][~]:ls -l /home
+total 8
+drwxr-xr-x  2 newuser    newuser    4096 Μάρ  15 22:48 newuser
+drwxrwxr-x 27 panagiotis panagiotis 4096 Μάρ  16 00:28 panagiotis
+
+2) [panagiotis][~]:ls -l test1
+-rw-rw-r-- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+[panagiotis][~]:chmod o-r test1
+[panagiotis][~]:ls -l test1
+-rw-rw---- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+
+3) [panagiotis][~]:chmod u+x test1
+[panagiotis][~]:ls -l test1
+-rwxrw---- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+
+4) [panagiotis][~]:chmod u-x,o+r test1
+[panagiotis][~]:ls -l test1
+-rw-rw-r-- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+
+5) [panagiotis][~]:chmod 660 test1
+[panagiotis][~]:ls -l test1
+-rw-rw---- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+[panagiotis][~]:chmod 760 test1
+[panagiotis][~]:ls -l test1
+-rwxrw---- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+[panagiotis][~]:chmod 664 test1
+[panagiotis][~]:ls -l test1
+-rw-rw-r-- 1 panagiotis panagiotis 0 Μάρ  15 20:45 test1
+
+..................................................................
+
+6. ΔΙΑΜΕΡΙΣΜΑΤΑ
+
+1) [panagiotis][~]:df -h ~/
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda6        46G  8,5G   35G  20% /
+
+2) [panagiotis][~]:sudo fdisk -l 2>/dev/null | awk '/\/dev\/sda[0-9]/' | wc -l
+7
+
+3) [panagiotis][~]:sudo fdisk -l 2>/dev/null | grep swap | awk '{ print $5 }'
+3,7G
+
+4) [panagiotis][~]:sudo sfdisk -l -uM 2>/dev/null | grep 'Linux$' | awk '{ print $4 }'
+47683
+
+5) [panagiotis][~]:du -hs /usr/share/pixmaps
+484K	/usr/share/pixmaps
+
+.....................................................................
+
+7. ΔΙΕΡΓΑΣΙΕΣ, ΜΝΗΜΗ, ΕΚΚΙΝΗΣΗ
+
+1) [panagiotis][~]:top
+
+top - 01:21:31 up  4:55,  2 users,  load average: 0,89, 0,40, 0,36
+Tasks: 243 total,   1 running, 242 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 11,2 us,  2,6 sy,  0,0 ni, 85,7 id,  0,5 wa,  0,0 hi,  0,0 si,  0,0 st
+KiB Mem:   3961888 total,  2856816 used,  1105072 free,    84384 buffers
+KiB Swap:  3905532 total,    62468 used,  3843064 free.  1115180 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
+10736 panagio+  20   0 1025732 270452  61908 S  16,3  6,8   5:25.12 chrome      
+ 2962 panagio+  20   0  789016 202432 104284 S  15,0  5,1  10:30.24 chrome      
+ 2924 panagio+  20   0 1641504 192512  87468 S   5,0  4,9  15:11.01 chrome      
+ 1559 root      20   0  383028  57760  44764 S   3,7  1,5   5:09.53 Xorg        
+. . .
+
+3 διεργασίες που έχουν να κάνουν με τον chrome καταλαμβάνουν την περισσότερη CPU (36,3% συνολικά και οι τρεις).
+
+[panagiotis][~]:top -o %MEM
+. . .
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
+ 2924 panagio+  20   0 1592156 206656  93424 S   0,0  5,2  15:51.80 chrome      
+ 2962 panagio+  20   0  762576 167604  83252 S   0,3  4,2  11:04.92 chrome      
+ 3129 panagio+  20   0  801688 136976  44328 S   0,0  3,5   5:43.32 chrome      
+. . .
+
+βλέπουμε εδώ ότι και πάλι οι 3 διεργασίες που χρησιμοποιούν περισσότερο την μνήμη (12,9% συνολικά) είναι αφορούν τον chrome.
+
+Για να τερματίσουμε μια διεργασία από το menu που διαθέτει η εντολή top πατάμε το k και μετά πληκτρολογούμε τον αριθμό (PID) της διεργασίας που θέλουμε να τερματίσουμε. Στην συγκεκριμένη περίπτωση την διεργασία που εκτελεί την εντολή top. Μετά πληκτρολογούμε τον αριθμό σήματος που θα σταλθεί στην διεργασία. Στην συγκεκριμένη περίπτωση πληκτρολογήσαμε τον αριθμό 15 που αντιστοιχεί σε απλό τερματισμό. Πιο συγκεκριμένα:
+
+[panagiotis][~]:top
+
+top - 01:39:45 up  5:13,  2 users,  load average: 0,64, 0,54, 0,49
+Tasks: 246 total,   2 running, 244 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1,8 us,  0,6 sy,  0,0 ni, 97,6 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+KiB Mem:   3961888 total,  2894320 used,  1067568 free,    92712 buffers
+KiB Swap:  3905532 total,    61948 used,  3843584 free.  1294392 cached Mem
+Send pid 12629 signal [15/sigterm] 15
+. . .
+
+Για να αλλάξουμε την προτεραιότητα μιας διεργασίας μέσα από μια εντολή top, πατάμε το πλήκτρο r, μετά δίνουμε το pid της διεργασίας που θέλουμε να αλλάξουμε και μετά τον αριθμό της αλλαγής. 
+
+2) [panagiotis][~]:ps -ef | grep panagiotis
+avahi      879     1  0 Απρ16 ?     00:00:00 avahi-daemon: running [panagiotis-Lenovo-G510.local]
+panagio+  3199  2341  0 Απρ16 ?     00:00:01 file-roller /home/panagiotis/Downloads/lab-test-1-15.zip
+panagio+  3216  2341  0 Απρ16 ?     00:00:05 evince /home/panagiotis/.cache/.fr-9OuQGO/lab-test-1-15.pdf
+. . .
+
+[panagiotis][~]:ps axms
+107  1996  00000000         -         -         - -    ?          0:00 /usr/li
+  107     -  00000000  00000000  00001000 <80000000 SNl  -          0:00 -
+  107     -  00000000 <7ffbfeff  00001000 <80000000 Sl   -          0:00 -
+  107     -  00000000 <7ffbfeff  00001000 <80000000 SNl  -          0:00 -
+  113  2119  00000000         -         -         - -    ?          0:00 /usr/li
+  113     -  00000000  00000000  00001000 <80000000 Sl   -          0:00 -
+
+3) [panagiotis][~]:free -h
+             total       used       free     shared    buffers     cached
+Mem:          3,8G       2,9G       887M       292M       225M       1,4G
+-/+ buffers/cache:       1,3G       2,5G
+Swap:         3,7G        14M       3,7G
+[panagiotis][~]:rhythmbox &
+[1] 7613
+[panagiotis][~]:free -h
+             total       used       free     shared    buffers     cached
+Mem:          3,8G       2,9G       857M       283M       225M       1,4G
+-/+ buffers/cache:       1,3G       2,4G
+Swap:         3,7G        14M       3,7G
+
+4) [panagiotis][~]:pstree
+init─┬─ModemManager─┬─{gdbus}
+     │              └─{gmain}
+     ├─NetworkManager─┬─2*[dhclient]
+     │                ├─dnsmasq
+     │                ├─{NetworkManager}
+     │                ├─{gdbus}
+. . .
+
+5) [panagiotis][~]:xclock
+^Z
+[1]+  Stopped                 xclock
+[panagiotis][~]:bg
+[1]+ xclock &
+[panagiotis][~]:jobs
+[1]+  Running                 xclock &
+[panagiotis][~]:ps
+  PID TTY          TIME CMD
+ 7179 pts/4    00:00:00 bash
+ 8698 pts/4    00:00:00 xclock
+ 8699 pts/4    00:00:00 ps
+[panagiotis][~]:kill -15 8698
+[panagiotis][~]:jobs
+[1]+  Terminated              xclock
+
+6) [panagiotis][~]:xcalc &
+[1] 11953
+[panagiotis][~]:jobs
+[1]+  Running                 xcalc &
+
+7) [panagiotis][~]:which grep
+/bin/grep
+
+8) [panagiotis][~]:echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:~/scripts/
+
+9) [panagiotis][~]:env | less
+XDG_VTNR=7
+LC_PAPER=el_GR.UTF-8
+LC_ADDRESS=el_GR.UTF-8
+XDG_SESSION_ID=c2
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/panagiotis
+LC_MONETARY=el_GR.UTF-8
+CLUTTER_IM_MODULE=xim
+SESSION=ubuntu
+GPG_AGENT_INFO=/run/user/1000/keyring-WEsCap/gpg:0:1
+TERM=xterm
+VTE_VERSION=3603
+SHELL=/bin/bash
+. . .
+
+10) [panagiotis][~]:runlevel
+N 2
+[panagiotis][~]:service --status-all
+ [ + ]  acpid
+ [ + ]  alsa-utils
+ [ + ]  anacron
+ [ + ]  apache2
+ [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  avahi-daemon
+. . .
+
+.......................................................................
+
+8. ΧΡΟΝΟΠΡΟΓΡΑΜΜΑΤΙΣΜΟΣ
+
+1) [panagiotis][~]:at now+30 minute
+warning: commands will be executed using /bin/sh
+at> mkdir new
+at> cp -r ~/* ~/new
+at> <EOT>
+job 10 at Fri Apr 17 19:59:00 2015
+[panagiotis][~]:ls ~/new
+Desktop    Downloads   examples.desktop  it1238~  new       Public     Videos
+Documents  ergasia 1~  it1238            Music    Pictures  Templates
+
+2) [panagiotis][~]:crontab -l
+00 12 * * 1-5 mkdir new
+00 12 * * 1-5 cp -r ~/* ~/new
+
+......................................................................
+
+9. ΔΙΟΧΕΤΕΥΣΗ, ΑΝΑΚΑΤΕΥΘΥΝΣΗ, ΑΡΧΕΙΑ ΔΙΑΜΟΡΦΩΣΗΣ
+
+1) [panagiotis][~]:date > file1
+[panagiotis][~]:ls >> file1
+[panagiotis][~]:cat file1
+Παρ 17 Απρ 2015 08:19:42 μμ EEST
+bbb
+Desktop
+Documents
+Downloads
+ergasia 1~
+. . .
+
+2) [panagiotis][~]:ls -l | tail -n +2 |  cut -c2-11 | sort | uniq | wc -l
+4
+
+3) [panagiotis][~]:alias dir="ls -a"
+[panagiotis][~]:dir
+.                   .compiz           it1238          Public
+..                  .config           it1238~         .selected_editor
+aaa                 Desktop           .local          .Skype
+. . .
+
+Και αν θέλουμε η εντολή αυτή ισχύει για κάθε σύνοδο φλοιού τότε θα την αποθηκεύαμε στο τέλος του αρχείου ~/.bashrc
+Διαφορετικός τρόπος θα ήταν να φτιάχναμε ένα σκριπτάκι που μέσα θα είχε την εντολή που θέλουμε να φτιάξουμε. Στην συνέχεια θα δίναμε δικαιώματα εκτέλεσης στον χρήστη(x+u) και στους άλλους χρήστες (x+u).
+
+.....................................................................
+
+10. ΔΗΜΙΟΥΡΓΙΑ ΑΠΛΗΣ ΙΣΤΟΣΕΛΙΔΑΣ
+
+[panagiotis][~]:sftp it1238@macedonia.uom.gr
+it1238@macedonia.uom.gr's password: 
+Connected to macedonia.uom.gr.
+sftp> put 11.html
+Uploading 11.html to /home/students/it1238/11.html
+11.html
+sftp> exit
+[panagiotis][~]:ssh it1238@macedonia.uom.gr
+it1238@macedonia.uom.gr's password: 
+it1238@eos:~$ mv 11.html index.html
+it1238@eos:~$ mv index.html public_html
+it1238@eos:~$ chmod -fR 701 .
+it1238@eos:~$ chmod 711 .
+it1238@eos:~$ chmod -fR 711 public_html/
+it1238@eos:~$ chmod -f 755 public_html/*
+
+Η ιστοσελίδα βρίσκεται στην διεύθυνση: http://users.uom.gr/~it1238/
+

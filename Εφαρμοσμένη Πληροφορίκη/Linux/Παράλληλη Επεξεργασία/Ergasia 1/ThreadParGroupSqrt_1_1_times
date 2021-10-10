@@ -1,0 +1,182 @@
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 1
+------------------------------------
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+------ Μέσος Όρος: 0.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 2
+------------------------------------
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+------ Μέσος Όρος: 0.8 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 4
+------------------------------------
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 2
+Elapsed Time in milliseconds: 2
+------ Μέσος Όρος: 2.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 8
+------------------------------------
+Elapsed Time in milliseconds: 4
+Elapsed Time in milliseconds: 5
+Elapsed Time in milliseconds: 4
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 3
+------ Μέσος Όρος: 3.8 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 16
+------------------------------------
+Elapsed Time in milliseconds: 10
+Elapsed Time in milliseconds: 9
+Elapsed Time in milliseconds: 9
+Elapsed Time in milliseconds: 7
+Elapsed Time in milliseconds: 9
+------ Μέσος Όρος: 8.8 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 100 || Επεξεργαστές: 1000
+------------------------------------
+Elapsed Time in milliseconds: 184
+Elapsed Time in milliseconds: 168
+Elapsed Time in milliseconds: 192
+Elapsed Time in milliseconds: 190
+Elapsed Time in milliseconds: 213
+------ Μέσος Όρος: 189.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 1
+------------------------------------
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+------ Μέσος Όρος: 0.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 2
+------------------------------------
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+------ Μέσος Όρος: 0.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 4
+------------------------------------
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 2
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 2
+Elapsed Time in milliseconds: 3
+------ Μέσος Όρος: 1.8 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 8
+------------------------------------
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 5
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 5
+Elapsed Time in milliseconds: 5
+------ Μέσος Όρος: 4.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 16
+------------------------------------
+Elapsed Time in milliseconds: 8
+Elapsed Time in milliseconds: 8
+Elapsed Time in milliseconds: 10
+Elapsed Time in milliseconds: 11
+Elapsed Time in milliseconds: 8
+------ Μέσος Όρος: 9 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 1000 || Επεξεργαστές: 1000
+------------------------------------
+Elapsed Time in milliseconds: 198
+Elapsed Time in milliseconds: 203
+Elapsed Time in milliseconds: 180
+Elapsed Time in milliseconds: 192
+Elapsed Time in milliseconds: 194
+------ Μέσος Όρος: 193.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 1
+------------------------------------
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 0
+------ Μέσος Όρος: 0.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 2
+------------------------------------
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 0
+Elapsed Time in milliseconds: 1
+------ Μέσος Όρος: 0.4 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 4
+------------------------------------
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 1
+Elapsed Time in milliseconds: 2
+Elapsed Time in milliseconds: 1
+------ Μέσος Όρος: 1.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 8
+------------------------------------
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 2
+Elapsed Time in milliseconds: 3
+Elapsed Time in milliseconds: 5
+Elapsed Time in milliseconds: 3
+------ Μέσος Όρος: 3.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 16
+------------------------------------
+Elapsed Time in milliseconds: 10
+Elapsed Time in milliseconds: 15
+Elapsed Time in milliseconds: 12
+Elapsed Time in milliseconds: 10
+Elapsed Time in milliseconds: 14
+------ Μέσος Όρος: 12.2 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Μέγεθος: 10000 || Επεξεργαστές: 1000
+------------------------------------
+Elapsed Time in milliseconds: 179
+Elapsed Time in milliseconds: 183
+Elapsed Time in milliseconds: 180
+Elapsed Time in milliseconds: 201
+Elapsed Time in milliseconds: 187
+------ Μέσος Όρος: 186 ms ---------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------

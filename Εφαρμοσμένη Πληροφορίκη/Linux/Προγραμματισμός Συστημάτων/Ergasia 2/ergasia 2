@@ -1,0 +1,170 @@
+======================================================== Προγραμματισμός Συστημάτων ============================================================
+
+=============================================================== Εργασία 02 =====================================================================
+
+Ονοματεπώνυμο: Παναγιώτης Γιαννουτάκης
+ΑΜ: 38/12
+email: it1238@uom.edu.gr
+
+================================================================================================================================================
+
+ΑΣΚΗΣΗ 2: Αναζήτηση με find =================================================================================================================
+2.
+it1238@snf-622:~$ find /home/ -name "test*"
+find: `/home/it1445/.cache': Permission denied
+find: `/home/it1445/.ssh': Permission denied
+find: `/home/it1398/.cache': Permission denied
+
+
+ΑΣΚΗΣΗ 3: Χρήση grep, egrep -1 =================================================================================================================
+1.
+it1238@snf-622:~/templab$ grep 'user' passwd
+
+Δεν υπάρχει γραμμή με το αλφαριθμητικό user στο αρχείο passwd.
+
+2.
+it1238@snf-622:~/templab$ grep '^t' passwd
+telnetd:x:102:102::/usr/lib/telnetd:/bin/false
+
+3.
+it1238@snf-622:~/templab$ grep '^[A-Z]' passwd
+
+Δεν υπάρχει γραμμή που να αρχίζει με κεφαλαίο γράμμα στο αρχείο passwd.
+
+4.
+it1238@snf-622:~/templab$ grep 'bash$' passwd
+root:x:0:0:root,,,:/root:/bin/bash
+local:x:9181:100::/home.local/local:/bin/bash
+
+5.
+it1238@snf-622:~/templab$ grep '_' passwd
+
+Δεν υπάρχουν γραμμές που να περιέχουν το αλφαρηθμιτικό '_' στο αρχείο passwd.
+
+6.
+it1238@snf-622:~/templab$ grep '^[^:]\{5\}:' passwd
+games:x:5:100:games:/usr/games:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+smmsp:x:103:101:Mail Submission Program,,,:/var/lib/sendmail:/bin/false
+local:x:9181:100::/home.local/local:/bin/bash
+
+7.
+it1238@snf-622:~/templab$ grep '.*:.*:2.*4:' passwd
+
+Δεν υπάρχει γραμμή που το 3 πεδίο να αρχίζει από 2 και να τελειώνει σε 4 στο αρχείο passwd.
+
+ΑΣΚΗΣΗ 4: Χρήση grep, egrep -2 =================================================================================================================
+1.
+it1238@snf-622:~/templab$ grep '^[[:alpha:]][[:alnum:]_]\{0,31\}$' textfile.txt
+abc
+alpha_beta
+x
+aQ
+AS_xyz_XgZ
+
+2.
+it1238@snf-622:~/templab$ grep '^23[[:digit:]]\{2\}\(-[[:digit:]]\{3\}\)\{2\}' textfile.txt
+2390-933-123
+2310-123-982
+2394-822-234
+2392-922-123
+
+3.
+it1238@snf-622:~/templab$ grep '^[[:alpha:]]\{3\}[[:space:]][[:digit:]]\{1,2\},[[:space:]][[:digit:]]\{4\}' textfile.txt
+Feb 12, 1999
+Jan 23, 2001
+
+4.
+it1238@snf-622:~/templab$ grep '\(1[0-2]\|^[[:digit:]]\):[0-5][[:digit:]][[:space:]][ap]m' textfile.txt
+8:20 am
+
+ΑΣΚΗΣΗ 5: Χρήση grep, egrep -3 =================================================================================================================
+1.
+it1238@snf-622:~/templab$ egrep 'a?' textfile-1.txt
+a
+hellohello
+goodbye
+......
+
+Εμφανίζει όσες γραμμές περιέχουν το γράμμα a καμία ή μια φορές. Δηλαδή όλες τις γραμμές του αρχείου.
+
+2.
+it1238@snf-622:~/templab$ egrep '(a|b)+' textfile-1.txt
+a
+goodbye
+
+Εμφανίζει τις γραμμές που περιέχουν είτε το γράμμα a, είτε το γράμμα b, μία ή περισσότερες φορές.
+
+3.
+it1238@snf-622:~/templab$ egrep '.\{2\}' textfile-1.txt
+
+Δεν εμφανίζει καμία γραμμή γιατί η εντολή egrep δεν χρησιμοποιεί τον χαρακτήρα backslash.
+
+4.
+it1238@snf-622:~/templab$ egrep '.\{2,\}' textfile-1.txt
+
+Παρόμοια με το 3.
+
+ΑΣΚΗΣΗ 6: Χρήση grep, egrep -4 =================================================================================================================
+1. 
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep '[0-9]*[xX][0-9]\{4\}' grepdata.txt
+714-555-7870 X7310
+714-555-7870 x7309
+714-555-5350 x2134
+
+2.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep '^[0-9]\{3\}[[:space:]]' grepdata.txt
+401 S. Palm St.
+440 Briercrest Ave.
+
+3.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep '[[:alpha:]]\{3\}\.[[:space:]][[:digit:]],[[:space:]][20-9]\{4\}' grepdata.txt
+Oct. 1, 2013 
+Oct. 8, 2013
+
+4.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep '\([aeiou]\).\1' grepdata.txt
+Steve Marshal
+Sonora High School
+Carl Hohl (aka Krazy Rabbit)
+Steve Lawson
+Rosemead High School
+Rosemead, CA 91770
+
+5.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep '^[^S]' grepdata.txt
+Esperanza High School
+1830 N. Kellog Dr.
+Anaheim, CA 92807-1281
+714-555-7870 X7310
+aztecwrestling@example.com
+Brian Fortenbaugh
+714-555-7870 x7309
+
+6.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep 'CA\|ca' grepdata.txt
+Anaheim, CA 92807-1281
+La Habra, CA 90631 
+Lakewood, CA 90713-2013
+Torrance, CA 90504
+Placentia, CA 90631
+Rosemead, CA 91770
+
+7.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep -n '@' grepdata.txt
+7:aztecwrestling@example.com
+38:Lawsonhawk@example.com
+45:daren103@example.com
+
+8.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep -v 'Sep.' grepdata.txt
+Esperanza High School
+1830 N. Kellog Dr.
+Anaheim, CA 92807-1281
+Steve Marshal
+
+9.
+[panagiotis][~/Desktop/Programmatismos Sustimaton/Ergasia 2]:grep -w 'de' grepdata.txt
+Daren de Heras
+

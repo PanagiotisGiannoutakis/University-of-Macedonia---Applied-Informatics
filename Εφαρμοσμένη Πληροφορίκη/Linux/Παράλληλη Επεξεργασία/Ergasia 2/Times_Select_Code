@@ -1,0 +1,103 @@
+-------------------------------------------------ΠΕΙΡΑΜΑΤΑ ΓΙΑ ΕΠΙΛΟΓΗ ΚΑΤΑΛΛΗΛΟΥ ΚΩΔΙΚΑ-----------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+---------- Χωρίς α, β, γ ---------------
+Elapsed time in milliseconds: 31193
+Elapsed time in milliseconds: 31601
+Elapsed time in milliseconds: 31153
+Elapsed time in milliseconds: 31046
+Elapsed time in milliseconds: 31087
+------ Μέσος Όρος: 31216 ms -----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με α, Χωρίς β, γ -----------
+Elapsed time in milliseconds: 31367
+Elapsed time in milliseconds: 31073
+Elapsed time in milliseconds: 31034
+Elapsed time in milliseconds: 31755
+Elapsed time in milliseconds: 31124
+------ Μέσος Όρος: 31270.6 ms ----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με α, β, Χωρίς γ -----------
+Elapsed time in milliseconds: 31552
+Elapsed time in milliseconds: 31144
+Elapsed time in milliseconds: 31285
+Elapsed time in milliseconds: 31599
+Elapsed time in milliseconds: 31254
+------ Μέσος Όρος: 31366.8 ms ----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με α, β, γ -----------------
+Elapsed time in milliseconds: 5390
+Elapsed time in milliseconds: 5296
+Elapsed time in milliseconds: 5228
+Elapsed time in milliseconds: 5245
+Elapsed time in milliseconds: 5228
+------ Μέσος Όρος: 5277.4 ms -----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με α, γ, Χωρίς β -----------
+Elapsed time in milliseconds: 5340
+Elapsed time in milliseconds: 5187
+Elapsed time in milliseconds: 5187
+Elapsed time in milliseconds: 5170
+Elapsed time in milliseconds: 5181
+------ Μέσος Όρος: 5213 ms -----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με β, γ, Χωρίς α -----------
+Elapsed time in milliseconds: 6791
+Elapsed time in milliseconds: 6669
+Elapsed time in milliseconds: 6659
+Elapsed time in milliseconds: 6814
+Elapsed time in milliseconds: 6660
+------ Μέσος Όρος: 6718.6 ms -----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με β, Χωρίς α, γ -----------
+Elapsed time in milliseconds: 28342
+Elapsed time in milliseconds: 28114
+Elapsed time in milliseconds: 28092
+Elapsed time in milliseconds: 28032
+Elapsed time in milliseconds: 28166
+------ Μέσος Όρος: 28149.2 ms -----------
+----------------------------------------
+----------------------------------------
+Τρόπος Εκτέλεσης: Ακολουθιακός || Μέγεθος: 2000
+----------- Με γ, Χωρίς α, β -----------
+Elapsed time in milliseconds: 6610
+Elapsed time in milliseconds: 6613
+Elapsed time in milliseconds: 6779
+Elapsed time in milliseconds: 6791
+Elapsed time in milliseconds: 6593
+------ Μέσος Όρος: 6677.2 ms -----------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Τρόπος Εκτέλεσης: Παράλληλος || Μέγεθος: 2000 || Νήματα: 16
+----------- Με σάρωση κατά γραμμές -----------
+Elapsed time in milliseconds: 753
+Elapsed time in milliseconds: 699
+Elapsed time in milliseconds: 595
+Elapsed time in milliseconds: 719
+Elapsed time in milliseconds: 816
+------ Μέσος Όρος: 716.4 ms -----------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Τρόπος Εκτέλεσης: Παράλληλος || Μέγεθος: 2000 || Νήματα: 16
+----------- Με σάρωση κατά στήλες -----------
+Elapsed time in milliseconds: 881
+Elapsed time in milliseconds: 722
+Elapsed time in milliseconds: 912
+Elapsed time in milliseconds: 708
+Elapsed time in milliseconds: 859
+------ Μέσος Όρος: 816.4 ms -----------
+
+

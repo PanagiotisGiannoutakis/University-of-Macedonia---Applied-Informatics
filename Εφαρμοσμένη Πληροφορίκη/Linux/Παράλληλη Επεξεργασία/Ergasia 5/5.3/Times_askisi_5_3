@@ -1,0 +1,323 @@
+------------------------------------------------ ΧΡΟΝΟΙ ΕΚΤΕΛΕΣΗΣ ΓΙΑ askisi_5_3.c -----------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 1 || Μέγεθος: 1.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 0.054126
+Time elapsed in seconds with reduction: 0.040421
+Time elapsed in seconds with critical: 0.036409
+Time elapsed in seconds with reduction: 0.035308
+Time elapsed in seconds with critical: 0.036651
+Time elapsed in seconds with reduction: 0.035347
+Time elapsed in seconds with critical: 0.037117
+Time elapsed in seconds with reduction: 0.035384
+Time elapsed in seconds with critical: 0.036502
+Time elapsed in seconds with reduction: 0.035334
+----------- Μέσος Όρος critical: 0.040161---------------
+----------- Μέσος Όρος reduction: 0.0363588--------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 1 || Μέγεθος: 100.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 3.290415
+Time elapsed in seconds with reduction: 3.064636
+Time elapsed in seconds with critical: 3.638916
+Time elapsed in seconds with reduction: 3.042457
+Time elapsed in seconds with critical: 3.666828
+Time elapsed in seconds with reduction: 3.530529
+Time elapsed in seconds with critical: 3.467285
+Time elapsed in seconds with reduction: 3.048446
+Time elapsed in seconds with critical: 3.378952
+Time elapsed in seconds with reduction: 3.030430
+----------- Μέσος Όρος critical: 3.4884792---------------
+----------- Μέσος Όρος reduction: 3.1432996--------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 1 || Μέγεθος: 1.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 32.059231
+Time elapsed in seconds with reduction: 30.397947
+Time elapsed in seconds with critical: 35.686569
+Time elapsed in seconds with reduction: 30.495871
+Time elapsed in seconds with critical: 35.139040
+Time elapsed in seconds with reduction: 30.495061
+Time elapsed in seconds with critical: 33.202904
+Time elapsed in seconds with reduction: 30.582144
+Time elapsed in seconds with critical: 31.840491
+Time elapsed in seconds with reduction: 29.786981
+----------- Μέσος Όρος critical: 33.585647 ---------------
+----------- Μέσος Όρος reduction: 30.3516008 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 1 || Μέγεθος: 10.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 42.166468
+Time elapsed in seconds with reduction: 40.804682
+Time elapsed in seconds with critical: 41.904521
+Time elapsed in seconds with reduction: 40.182262
+Time elapsed in seconds with critical: 41.723206
+Time elapsed in seconds with reduction: 39.906478
+Time elapsed in seconds with critical: 41.635762
+Time elapsed in seconds with reduction: 39.996724
+Time elapsed in seconds with critical: 43.770888
+Time elapsed in seconds with reduction: 41.862792
+----------- Μέσος Όρος critical: 42.240169 ---------------
+----------- Μέσος Όρος reduction: 40.5505876--------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 2 || Μέγεθος: 1.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 0.129976
+Time elapsed in seconds with reduction: 0.056506
+Time elapsed in seconds with critical: 0.080582
+Time elapsed in seconds with reduction: 0.030921
+Time elapsed in seconds with critical: 0.084561
+Time elapsed in seconds with reduction: 0.031779
+Time elapsed in seconds with critical: 0.083700
+Time elapsed in seconds with reduction: 0.032318
+Time elapsed in seconds with critical: 0.126153
+Time elapsed in seconds with reduction: 0.031774
+----------- Μέσος Όρος critical: 0.1009944 ---------------
+----------- Μέσος Όρος reduction: 0.0366596 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 2 || Μέγεθος: 100.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 12.638782
+Time elapsed in seconds with reduction: 2.702961
+Time elapsed in seconds with critical: 8.343930
+Time elapsed in seconds with reduction: 2.983321
+Time elapsed in seconds with critical: 13.879396
+Time elapsed in seconds with reduction: 4.754435
+Time elapsed in seconds with critical: 14.758418
+Time elapsed in seconds with reduction: 4.157924
+Time elapsed in seconds with critical: 13.420663
+Time elapsed in seconds with reduction: 4.196080
+----------- Μέσος Όρος critical: 12.6082378 ---------------
+----------- Μέσος Όρος reduction: 3.7589442 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 2 || Μέγεθος: 1.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 107.407641
+Time elapsed in seconds with reduction: 37.527906
+Time elapsed in seconds with critical: 105.549229
+Time elapsed in seconds with reduction: 46.335313
+Time elapsed in seconds with critical: 123.775778
+Time elapsed in seconds with reduction: 48.027718
+Time elapsed in seconds with critical: 94.053165
+Time elapsed in seconds with reduction: 51.971255
+Time elapsed in seconds with critical: 129.156569
+Time elapsed in seconds with reduction: 46.069982
+----------- Μέσος Όρος critical: 111.9884764 ---------------
+----------- Μέσος Όρος reduction: 45.9864348 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 2 || Μέγεθος: 10.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 147.512519
+Time elapsed in seconds with reduction: 75.932965
+Time elapsed in seconds with critical: 155.834735
+Time elapsed in seconds with reduction: 65.963476
+Time elapsed in seconds with critical: 168.704753
+Time elapsed in seconds with reduction: 62.238690
+Time elapsed in seconds with critical: 133.248980
+Time elapsed in seconds with reduction: 67.365624
+Time elapsed in seconds with critical: 168.046031
+Time elapsed in seconds with reduction: 55.840404
+----------- Μέσος Όρος critical: 154.6694036 ---------------
+----------- Μέσος Όρος reduction: 65.4682318 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 4 || Μέγεθος: 1.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 0.180324
+Time elapsed in seconds with reduction: 0.053305
+Time elapsed in seconds with critical: 0.172177
+Time elapsed in seconds with reduction: 0.059278
+Time elapsed in seconds with critical: 0.243130
+Time elapsed in seconds with reduction: 0.051468
+Time elapsed in seconds with critical: 0.304992
+Time elapsed in seconds with reduction: 0.053091
+Time elapsed in seconds with critical: 0.219974
+Time elapsed in seconds with reduction: 0.058633
+----------- Μέσος Όρος critical: 0.2241194 ---------------
+----------- Μέσος Όρος reduction: 0.055155 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 4 || Μέγεθος: 100.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 19.162258
+Time elapsed in seconds with reduction: 4.129578
+Time elapsed in seconds with critical: 20.178219
+Time elapsed in seconds with reduction: 4.263014
+Time elapsed in seconds with critical: 21.006607
+Time elapsed in seconds with reduction: 4.421033
+Time elapsed in seconds with critical: 19.393027
+Time elapsed in seconds with reduction: 4.462302
+Time elapsed in seconds with critical: 18.710226
+Time elapsed in seconds with reduction: 4.231748
+----------- Μέσος Όρος critical: 19.6900674 ---------------
+----------- Μέσος Όρος reduction: 4.301535 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 4 || Μέγεθος: 1.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 237.602221
+Time elapsed in seconds with reduction: 43.951539
+Time elapsed in seconds with critical: 174.184000
+Time elapsed in seconds with reduction: 44.348622
+Time elapsed in seconds with critical: 225.859846
+Time elapsed in seconds with reduction: 42.183071
+Time elapsed in seconds with critical: 231.163723
+Time elapsed in seconds with reduction: 42.772409
+Time elapsed in seconds with critical: 232.909455
+Time elapsed in seconds with reduction: 42.895456
+----------- Μέσος Όρος critical: 220.343849 ---------------
+----------- Μέσος Όρος reduction: 43.2302194 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 4 || Μέγεθος: 10.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 234.099883
+Time elapsed in seconds with reduction: 60.797570
+Time elapsed in seconds with critical: 313.668052
+Time elapsed in seconds with reduction: 56.968281
+Time elapsed in seconds with critical: 327.840257
+Time elapsed in seconds with reduction: 63.571848
+Time elapsed in seconds with critical: 362.510651
+Time elapsed in seconds with reduction: 61.371677
+----------- Μέσος Όρος critical: 247.6237686 ---------------
+----------- Μέσος Όρος reduction: 48.5418752 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 8 || Μέγεθος: 1.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 0.260383
+Time elapsed in seconds with reduction: 0.044212
+Time elapsed in seconds with critical: 0.379082
+Time elapsed in seconds with reduction: 0.040941
+Time elapsed in seconds with critical: 0.359979
+Time elapsed in seconds with reduction: 0.051487
+Time elapsed in seconds with critical: 0.359979
+Time elapsed in seconds with reduction: 0.051487
+Time elapsed in seconds with critical: 0.324270
+Time elapsed in seconds with reduction: 0.043713
+----------- Μέσος Όρος critical: 0.3367386 ---------------
+----------- Μέσος Όρος reduction: 0.046368 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 8 || Μέγεθος: 100.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 26.246093
+Time elapsed in seconds with reduction: 3.783291
+Time elapsed in seconds with critical: 29.982301
+Time elapsed in seconds with reduction: 3.668743
+Time elapsed in seconds with critical: 25.595482
+Time elapsed in seconds with reduction: 4.153041
+Time elapsed in seconds with critical: 24.935801
+Time elapsed in seconds with reduction: 3.931733
+Time elapsed in seconds with critical: 34.025678
+Time elapsed in seconds with reduction: 3.863788
+----------- Μέσος Όρος critical: 28.157071 ---------------
+----------- Μέσος Όρος reduction: 3.8801192 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 8 || Μέγεθος: 1.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 280.774108
+Time elapsed in seconds with reduction: 34.899745
+Time elapsed in seconds with critical: 324.448936
+Time elapsed in seconds with reduction: 38.385394
+Time elapsed in seconds with critical: 355.146826
+Time elapsed in seconds with reduction: 39.900265
+Time elapsed in seconds with critical: 342.827315
+Time elapsed in seconds with reduction: 39.725274
+Time elapsed in seconds with critical: 333.492015
+Time elapsed in seconds with reduction: 40.100224
+----------- Μέσος Όρος critical: 327.33784 ---------------
+----------- Μέσος Όρος reduction: 38.6021804 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 8 || Μέγεθος: 10.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 526.486131
+Time elapsed in seconds with reduction: 55.688549
+Time elapsed in seconds with critical: 480.675846
+Time elapsed in seconds with reduction: 52.815390
+Time elapsed in seconds with critical: 478.574646
+Time elapsed in seconds with reduction: 54.852894
+Time elapsed in seconds with critical: 462.021092
+Time elapsed in seconds with reduction: 56.594048
+Time elapsed in seconds with critical: 518.634041
+Time elapsed in seconds with reduction: 56.901847
+----------- Μέσος Όρος critical: 493.2783512 ---------------
+----------- Μέσος Όρος reduction: 55.3705456 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 16 || Μέγεθος: 1.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 0.559304
+Time elapsed in seconds with reduction: 0.042579
+Time elapsed in seconds with critical: 0.505569
+Time elapsed in seconds with reduction: 0.039695
+Time elapsed in seconds with critical: 0.351825
+Time elapsed in seconds with reduction: 0.033604
+Time elapsed in seconds with critical: 0.233381
+Time elapsed in seconds with reduction: 0.041839
+Time elapsed in seconds with critical: 0.378156
+Time elapsed in seconds with reduction: 0.035683
+----------- Μέσος Όρος critical: 0.405647 ---------------
+----------- Μέσος Όρος reduction: 0.03868 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 16 || Μέγεθος: 100.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 35.258238
+Time elapsed in seconds with reduction: 3.486749
+Time elapsed in seconds with critical: 43.309375
+Time elapsed in seconds with reduction: 3.659931
+Time elapsed in seconds with critical: 40.132638
+Time elapsed in seconds with reduction: 3.722200
+Time elapsed in seconds with critical: 79.988001
+Time elapsed in seconds with reduction: 3.691697
+Time elapsed in seconds with critical: 46.665232
+Time elapsed in seconds with reduction: 3.676910
+----------- Μέσος Όρος critical: 49.0706968 ---------------
+----------- Μέσος Όρος reduction: 3.6474974 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 16 || Μέγεθος: 1.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 434.987680
+Time elapsed in seconds with reduction: 34.989926
+Time elapsed in seconds with critical: 453.703051
+Time elapsed in seconds with reduction: 34.035991
+Time elapsed in seconds with critical: 344.488818
+Time elapsed in seconds with reduction: 35.759409
+Time elapsed in seconds with critical: 339.541032
+Time elapsed in seconds with reduction: 36.096360
+Time elapsed in seconds with critical: 453.375545
+Time elapsed in seconds with reduction: 34.241527
+----------- Μέσος Όρος critical: 405.2192252 ---------------
+----------- Μέσος Όρος reduction: 35.0246426 --------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+------- Νήματα: 16 || Μέγεθος: 10.000.000.000 --------
+----------------------------------------------
+Time elapsed in seconds with critical: 557.659080
+Time elapsed in seconds with reduction: 47.991723
+Time elapsed in seconds with critical: 555.005663
+Time elapsed in seconds with reduction: 51.371440
+Time elapsed in seconds with critical: 535.297997
+Time elapsed in seconds with reduction: 51.648066
+Time elapsed in seconds with critical: 615.681081
+Time elapsed in seconds with reduction: 52.171423
+Time elapsed in seconds with critical: 628.329911
+Time elapsed in seconds with reduction: 49.115411
+----------- Μέσος Όρος critical: 578.3947464 ---------------
+----------- Μέσος Όρος reduction: 50.4596126 --------------
+
+---------------Σημείωση: Χρόνους για Java Threads δεν υπάρχουν γιατί δεν είχα λύσει το συγκεκριμένο σκέλος της 3ης εργασίας ----------------
+--------------------------------------------------------------------------------------------------------------------------------------------
