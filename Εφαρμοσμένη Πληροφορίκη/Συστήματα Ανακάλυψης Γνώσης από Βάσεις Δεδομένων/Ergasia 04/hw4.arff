@@ -1,0 +1,13 @@
+@relation hw4
+@attribute Kragion {t}
+@attribute Maskara {t}
+@attribute Poudra {t}
+@attribute Rouz {t}
+@attribute Skies {t}
+@data
+t,t,?,t,?
+t,?,t,?,t
+t,t,?,?,?
+?,?,t,t,?
+?,?,t,?,t
+t,?,t,t,t
