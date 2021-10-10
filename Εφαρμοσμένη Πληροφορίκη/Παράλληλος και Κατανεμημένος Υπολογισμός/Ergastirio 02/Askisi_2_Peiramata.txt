@@ -1,0 +1,230 @@
+
+~~~~~~~~~~~~~~ Askisi 2.1 ~~~~~~~~~~~~~~
+
+Gia to programma ThreadParGroupSqrt exoume
+
+Size: 1.000, numOfThreads: 1.000
+time in ms = 93
+
+Size: 1.000, numOfThreads: 8
+time in ms = 2
+
+Size: 10.000, numOfThreads: 10.000
+time in ms = 791
+
+Size: 1.000, numOfThreads: 8
+time in ms = 2
+
+Size: 100.000, numOfThreads: 100.000
+time in ms = 7.563
+
+Size: 1.000, numOfThreads: 8
+time in ms = 3
+
+Size: 1.000.000, numOfThreads: 1.000.000
+time in ms = 75.802
+
+Size: 1.000, numOfThreads: 8
+time in ms = 22
+
+Auto pou paratiroume einai oti otan o arithmos ton nimaton einai idios me ton arithmo tou pinaka (i otan o arithmos ton nimaton einai polu megalos), tote kathusterei polu perissotero se sxesi
+me tin ektelesi tou programmatos otan exoume liga nimata. Auto einai logiko giati gia na dimiourgithoun kai na diefthetithoun polla nimata apaiteitai polus xronos. Episis kathe nima kanei mia seira apo 
+prakseis opote oso pio polla nimata exoume toso perissoteres prakseis tha ektelestoun.
+
+
+
+
+~~~~~~~~~~~~~~ Askisi 2.2 ~~~~~~~~~~~~~~
+
+Gia to programma ThreadParGroupSqrt apo ton fakelo SqrtThreadGroupSPMDStatic exoume
+
+SIZE: 10.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 10.000.000, numOfThreads: 1
+time in ms = 46
+
+Size: 10.000.000, numOfThreads: 2
+time in ms = 32
+
+Size: 10.000.000, numOfThreads: 4
+time in ms = 24
+
+Size: 10.000.000, numOfThreads: 8
+time in ms = 26
+
+Size: 10.000.000, numOfThreads: 16
+time in ms = 31
+
+Size: 10.000.000, numOfThreads: 32
+time in ms = 29
+
+Auto pou paratiroume einai oti oso auksanontai ta nimata mexri enos simeiou, tote meionetai o xronos. Auto sumvainei giati o fortos ergasias moirazetai kalutera. Apo ena simeio kai meta vlepoume mia mikri
+auksisi tou xronou giati i diaxeirisi pollon nimaton apaitei ksexoristo xrono alla kai pali den ftanei ton xrono ektelesis tou 1 nimatos.
+
+
+SIZE: 20.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 20.000.000, numOfThreads: 1
+time in ms = 91
+
+Size: 20.000.000, numOfThreads: 2
+time in ms = 53
+
+Size: 20.000.000, numOfThreads: 4
+time in ms = 34
+
+Size: 20.000.000, numOfThreads: 8
+time in ms = 33
+
+Size: 20.000.000, numOfThreads: 16
+time in ms = 44
+
+Size: 20.000.000, numOfThreads: 32
+time in ms = 67
+
+Auto pou vlepoyme einai oti o xronos ektelesis exei sxedon diplasiastei se sxesi me prin kati pou einai logiko giati diplasiasame to megethos tou provlimatos. Episis isxuoun ta sumperasmata
+gia tin katanomi ton apotelesmaton tou xronou pou vgalame kai sta 10.000.000 (dld gia ena nima exoume ton megalutero xrono, oso auksanoume ta nimata meionetai o xronos kai sto telos uparxei mia
+mikri auksisi tou xronou eksaitias tou fortou diaxeirisis ton nimaton).
+
+
+SIZE: 50.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 50.000.000, numOfThreads: 1
+time in ms = 228
+
+Size: 50.000.000, numOfThreads: 2
+time in ms = 122
+
+Size: 50.000.000, numOfThreads: 4
+time in ms = 69
+
+Size: 50.000.000, numOfThreads: 8
+time in ms = 52
+
+Size: 50.000.000, numOfThreads: 16
+time in ms = 58
+
+Size: 50.000.000, numOfThreads: 32
+time in ms = 82
+
+Auto pou paratiroume einai oti o xronos auksithike analoga me tin auksisi tou megethous tou provlimatos se sxesi me ta proigoumena peiramata. Vlepoume omos oti sta 8 kai 16 nimata i auksisi tou xronou 
+einai gia ligo pio megali se sxesi me ton 20.000.000 pinaka. Auto sumvainei giati i douleia pou ginetai sta nimata einai apodotiki. Isxuoun ta idia sumperasmata me prin.
+
+
+SIZE: 100.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 100.000.000, numOfThreads: 1
+time in ms = 454
+
+Size: 100.000.000, numOfThreads: 2
+time in ms = 235
+
+Size: 100.000.000, numOfThreads: 4
+time in ms = 127
+
+Size: 100.000.000, numOfThreads: 8
+time in ms = 79
+
+Size: 100.000.000, numOfThreads: 16
+time in ms = 114
+
+Size: 100.000.000, numOfThreads: 32
+time in ms = 88
+
+Edo paratiroume oti o xronos diplasiastike ektos apo ta peiramata me nimata 8 kai 32. Auto sunaivei giati sta 8 nimata egine kali diaxeirisi megethous kai fortou upologismou kai sta 32 vlepoume gia 
+proti fora na einai mikros o xronos kai auto dioti se toso megala megethoi provlimatos, endukneite na xrisimopoioume perissotera nimata.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Gia to programma ThreadParGroupSqrt apo ton fakelo SqrtThreadGroupSPMDStaticMain exoume
+
+SIZE: 10.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 10.000.000, numOfThreads: 1
+time in ms = 46
+
+Size: 10.000.000, numOfThreads: 2
+time in ms = 31
+
+Size: 10.000.000, numOfThreads: 4
+time in ms = 23
+
+Size: 10.000.000, numOfThreads: 8
+time in ms = 24
+
+Size: 10.000.000, numOfThreads: 16
+time in ms = 28
+
+Size: 10.000.000, numOfThreads: 32
+time in ms = 56
+
+Vlepoume oti oi xronoi einai idioi sxedon me to proigoumeno programma sto idio megethos provlimatos kai arithmo nimaton. I moni diafora paratireite sta 32 nimata pou o xronos edo auksithike.
+
+
+SIZE: 20.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 20.000.000, numOfThreads: 1
+time in ms = 93
+
+Size: 20.000.000, numOfThreads: 2
+time in ms = 53
+
+Size: 20.000.000, numOfThreads: 4
+time in ms = 35
+
+Size: 20.000.000, numOfThreads: 8
+time in ms = 27
+
+Size: 20.000.000, numOfThreads: 16
+time in ms = 32
+
+Size: 20.000.000, numOfThreads: 32
+time in ms = 61
+
+Kai edo auto pou paratiroume einai oti oi xronoi einai paromoioi kai sta duo programmata.
+
+
+SIZE: 50.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 50.000.000, numOfThreads: 1
+time in ms = 233
+
+Size: 50.000.000, numOfThreads: 2
+time in ms = 120
+
+Size: 50.000.000, numOfThreads: 4
+time in ms = 70
+
+Size: 50.000.000, numOfThreads: 8
+time in ms = 58
+
+Size: 50.000.000, numOfThreads: 16
+time in ms = 69
+
+Size: 50.000.000, numOfThreads: 32
+time in ms = 80
+
+Paromoia kai edo oi xronoi einai idioi.
+
+
+SIZE: 100.000.000
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Size: 100.000.000, numOfThreads: 1
+time in ms = 454
+
+Size: 100.000.000, numOfThreads: 2
+time in ms = 234
+
+Size: 100.000.000, numOfThreads: 4
+time in ms = 124
+
+Size: 100.000.000, numOfThreads: 8
+time in ms = 80
+
+Size: 100.000.000, numOfThreads: 16
+time in ms = 86
+
+Size: 100.000.000, numOfThreads: 32
+time in ms = 96
+
+Oi xronoi einai idioi kai sta duo programmata me eksairesi ta 16 nimata pou einai meiomenos o xronos se auto to programma.
