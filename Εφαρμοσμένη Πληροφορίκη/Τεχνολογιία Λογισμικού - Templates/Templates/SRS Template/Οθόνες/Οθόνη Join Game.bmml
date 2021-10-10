@@ -1,0 +1,92 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="978" measuredH="677" mockupW="481" mockupH="610">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="497" y="67" w="481" h="610" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="585" y="94" w="304" h="-1" measuredW="249" measuredH="38" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>false</bold>
+        <size>32</size>
+        <state>up</state>
+        <text>%u039F%u03B8%u03CC%u03BD%u03B7%20Join%20Game</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::HRule" x="554" y="132" w="367" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="true" isInGroup="-1"/>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="585" y="157" w="-1" h="-1" measuredW="91" measuredH="26" zOrder="3" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>18</size>
+        <text>NickName%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TextInput" x="685" y="157" w="130" h="-1" measuredW="79" measuredH="26" zOrder="4" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="585" y="204" w="-1" h="-1" measuredW="88" measuredH="26" zOrder="5" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>18</size>
+        <text>Character</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::List" x="585" y="245" w="100" h="95" measuredW="100" measuredH="126" zOrder="6" locked="true" isInGroup="-1">
+      <controlProperties>
+        <alternateRowColor>14803425</alternateRowColor>
+        <bold>false</bold>
+        <color>12303802</color>
+        <selectedIndex>1</selectedIndex>
+        <size>13</size>
+        <text>Character%201%0ACharacter%202%0ACharacter%203%0ACharacter%204</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::FieldSet" x="740" y="230" w="89" h="152" measuredW="200" measuredH="170" zOrder="7" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>Character</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="574" y="397" w="-1" h="-1" measuredW="121" measuredH="26" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>18</size>
+        <text>Choose%20Game</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::List" x="734" y="397" w="101" h="69" measuredW="100" measuredH="126" zOrder="9" locked="true" isInGroup="-1">
+      <controlProperties>
+        <alternateRowColor>15134199</alternateRowColor>
+        <color>12303802</color>
+        <selectedIndex>1</selectedIndex>
+        <text>Game%201%0AGame%202%0AGame%203</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="557" y="613" w="146" h="39" measuredW="57" measuredH="27" zOrder="10" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>10066329</color>
+        <size>18</size>
+        <text>Join</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Button" x="756" y="612" w="148" h="40" measuredW="82" measuredH="27" zOrder="11" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>10066329</color>
+        <size>18</size>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::PointyButton" x="661" y="526" w="126" h="-1" measuredW="88" measuredH="27" zOrder="12" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>7317724</color>
+        <direction>center</direction>
+        <menuIcon>false</menuIcon>
+        <size>18</size>
+        <text>Refresh</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

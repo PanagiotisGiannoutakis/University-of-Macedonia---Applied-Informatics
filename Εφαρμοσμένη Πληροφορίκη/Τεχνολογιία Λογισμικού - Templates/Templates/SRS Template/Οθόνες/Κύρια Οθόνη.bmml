@@ -1,0 +1,60 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="978" measuredH="677" mockupW="481" mockupH="610">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="497" y="67" w="481" h="610" measuredW="100" measuredH="70" zOrder="0" locked="true" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="576" y="88" w="304" h="-1" measuredW="175" measuredH="38" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <size>32</size>
+        <state>up</state>
+        <text>%u039A%u03CD%u03C1%u03B9%u03B1%20%u039F%u03B8%u03CC%u03BD%u03B7</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::HRule" x="555" y="124" w="367" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="true" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="626" y="192" w="204" h="49" measuredW="146" measuredH="28" zOrder="3" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13421772</color>
+        <menuIcon>false</menuIcon>
+        <size>20</size>
+        <text>Single%20Player</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Button" x="626" y="281" w="204" h="49" measuredW="136" measuredH="28" zOrder="4" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13421772</color>
+        <menuIcon>false</menuIcon>
+        <size>20</size>
+        <text>Multi-Player</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Button" x="626" y="370" w="204" h="49" measuredW="96" measuredH="28" zOrder="5" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13421772</color>
+        <menuIcon>false</menuIcon>
+        <size>20</size>
+        <text>Options</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="626" y="463" w="204" h="49" measuredW="93" measuredH="28" zOrder="6" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13421772</color>
+        <menuIcon>false</menuIcon>
+        <size>20</size>
+        <text>Credits</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="626" y="553" w="204" h="49" measuredW="59" measuredH="28" zOrder="7" locked="true" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>13421772</color>
+        <menuIcon>false</menuIcon>
+        <size>20</size>
+        <text>Exit</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
