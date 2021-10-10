@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Αποτελέσματα Φόρμας Παραπόνων </title>
+		<style>
+			#results {
+			background-color: black;
+			color: white;
+			border-color: red;
+			border-style: solid;
+			width: 50%;
+			height: 400px;
+			padding: 10px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1> Φόρμα Παραπόνων </h1>
+
+		<div id="results">
+			<p> Εδώ θα εμφανιστούν οι καταχωρίσεις: <br /> ------------------------------------------------------- </p>
+			<p id="onoma"></p>
+			<p id="email"></p>
+			<p id="epaggelma"></p>
+			<p id="provlima"></p>
+			<p id="ethnikotita"></p>
+			<p id="sxolia"></p>
+		</div>
+		
+		<script>
+			var qs = (function(a) {
+				if (a == "") return {};
+				var b = {};
+				for (var i = 0; i < a.length; ++i) {
+					var p=a[i].split('=', 2);
+					if (p.length == 1)
+						b[p[0]] = "";
+					else
+						b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+				}
+				return b;
+			})(window.location.search.substr(1).split('&'));
+			
+			document.getElementById("onoma").innerHTML = "- " + qs["name_input"];
+			document.getElementById("email").innerHTML = "- " + qs["email_input"];
+			document.getElementById("epaggelma").innerHTML = "- " + qs["job"];
+			document.getElementById("provlima").innerHTML = "- " + qs["problem"];
+			document.getElementById("ethnikotita").innerHTML = "- " + qs["nationality"];
+			document.getElementById("sxolia").innerHTML = "- " + qs["comments"];
+		</script>
+		
+	</body>
+</html>

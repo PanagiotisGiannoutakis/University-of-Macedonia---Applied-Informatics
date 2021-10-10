@@ -1,0 +1,43 @@
+header {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+nav {
+	background-color: rgb(184,184,184) ;
+	width: 15%;
+	height: 600px;
+	float: left;
+	padding: 5px;
+}
+
+section {
+	width: 75%;
+	border-color: black;
+	height: 600px;
+	border: solid;
+	float: left;
+	padding: 5px;
+}
+
+aside {
+	width: 8%;
+	background-color: gray;
+	height: 600px;
+	float: right;
+	padding: 5px;
+}
+
+section p img {
+	float: right;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 2px;
+}

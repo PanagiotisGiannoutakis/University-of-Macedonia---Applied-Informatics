@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Φόρμα Καταχώρισης Παραπόνων </title>
+		<style>
+			#error_Message {
+			background-color: black;
+			color: white;
+			border-color: red;
+			border-style: solid;
+			float:right;
+			position: relative;
+			bottom: 350px;
+			right: 500px;
+			padding: 6px;
+			}
+
+			#first {
+				width: 20%;
+			}
+
+			table {
+				border-spacing: 10px;
+			}
+
+			#error_Message h4 {
+				padding: 10px;
+			}
+
+			#error_Message p {
+				margin: 10px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1> Φόρμα Καταχώρισης Παραπόνων </h1>
+		
+		<p> Παρακαλώ, συμπληρώστε τα παρακάτω στοιχεία, ευχαριστώ! </p>
+		
+		<form id="myForm" action="apot.html" method="GET" target="_blank"  >
+		
+			<table>
+				<tr>
+					<td id="first" valign="top"> <label> <b> Ποιό είναι το ονοματεπώνυμο σας; </b> </label> </td>
+					<td id="second"> <input type="text" id="name_input" name="name_input" size="40" placeholder="Enter your full name" oninvalid="errorFunction(1)" required /> </td>
+				</tr>
+		
+				<tr>
+					<td id="first" valign="top"> <label> <b> Ποιά είναι η e-mail σας διεύθυνση; </b> </label> </td>
+					<td id="second"> <input type="email" id="email_input" name="email_input" size="40" placeholder="Enter your email address" oninvalid="errorFunction(2)" required /> </td>
+				</tr>
+		
+				<tr>
+					<td id="first" valign="top"> <label> <b> Επάγγελμα (διαλέξτε ένα από τα παρακάτω): <b> </label> </td>
+					<td id="second">
+						<input type="radio" name="job" value="Δημόσιος Υπάλληλος" id="job_input" oninvalid="errorFunction(3)" required /> Δημόσιος Υπάλληλος <br />
+						<input type="radio" name="job" value="Ιδιωτικός Υπάλληλος" /> Ιδιωτικός Υπάλληλος <br />
+						<input type="radio" name="job" value="Άνεργος" /> Άνεργος <br />
+						<input type="radio" name="job" value="Άλλο" /> Άλλο <br />
+					</td>
+				</tr>
+			
+				<tr>
+					<td id="first" valign="top"> <label> <b> Κατηγορία Προβλήματος (διαλέξτε όσα θέλετε): </b> </label> </td>
+					<td id="second">
+						<input type="checkbox" name="problem" value="Καθαριότητα" /> Καθαριότητα <br />
+						<input type="checkbox" name="problem" value="Εξυπυρέτηση" /> Εξυπηρέτηση <br />
+						<input type="checkbox" name="problem" value="Ποιότητα και ποικιλία φαγητού" /> Ποιότητα και ποικιλία φαγητού <br />
+						<input type="checkbox" name="problem" value="Διαθεσιμότητα δραστηριοτήτων" /> Διαθεσιμότητα δραστηριοτήτων <br />
+					</td>
+				</tr>
+		
+				<tr>
+					<td id="first" valign="top"> <label> <b> Εθνικότητα: </b> </label> </td>
+					<td id="second">
+						<select name="nationality" multiple>
+							<option value="Ελληνική" > Ελληνική </option>
+							<option value="Ευρωπαικής Ένωσης"> Ευρωπαικής Ένωσης </option>
+							<option value="Ηνωμλενων Πολιτειών"> Ηνωμένων Πολιτειών </option>
+							<option value="Άλλη"> Άλλη </option>
+						</select>
+					</td>
+				</tr>
+		
+				<tr>
+					<td id="first" valign="top"> <label> <b> Παρακαλώ συμπληρώστε παρακάτω, ότι ζήτημα θέλετε να μας κοινοποιήσετε: </b> </label> </td> 
+					<td id="second"> <textarea style="height:100px; width:500px;" placeholder="Comments..." name="comments" ></textarea> </td>
+				</tr>
+				
+			</table>
+			
+			<div id="error_Message">
+				<h4> Error Messages Area:</h4>
+			
+			</div>
+			
+			<input type="submit" name="submit" value="Πατήστε εδώ για Υποβολή" />
+			<input type="reset" name="reset" value="Καθάρισμα" />
+		
+		</form>
+		
+		<script>
+			function errorFunction(errorNumber) {
+				if(errorNumber == 1) {
+					var para = document.createElement("P");
+					var t = document.createTextNode("Please insert a valid name !");
+					para.appendChild(t);
+					document.getElementById("error_Message").appendChild(para);
+				} else if (errorNumber == 2) {
+					var email = document.getElementsByName("email_input");
+					if(email.value == undefined || email.value == "") {
+						var para = document.createElement("P");
+						var t = document.createTextNode("Please insert an email !");
+						para.appendChild(t);
+						document.getElementById("error_Message").appendChild(para);
+					} else {
+						var para = document.createElement("P");
+						var t = document.createTextNode("Please insert a valid email with @ symbol !");
+						para.appendChild(t);
+						document.getElementById("error_Message").appendChild(para);
+					}
+				} else if (errorNumber == 3) {
+					var para = document.createElement("P");
+					var t = document.createTextNode("Please select your current job situation !");
+					para.appendChild(t);
+					document.getElementById("error_Message").appendChild(para);
+				}
+			}
+			
+			/*function submitFunction() {
+				// Lanthasmenos kodikas gia diagrafi ton minimaton sfalmatos meta tin upovoli tou koumpiou submit.
+				var aaa = document.getElementById("error_Message");
+				if(aaa.contains("P")) {
+					aaa.parentNode.removeChild(aaa);
+				}
+			
+				if((document.getElementById("name_input").checkValidity() == true) && (document.getElementById("email_input").checkValidity() == true) && (document.getElementById("job_input").checkValidity() == true)) {
+					document.getElementById("myForm").submit();
+				} else {
+					alert("Please fill all fields");
+				}
+			}*/
+			
+		</script>
+		
+	</body>
+
+</html>

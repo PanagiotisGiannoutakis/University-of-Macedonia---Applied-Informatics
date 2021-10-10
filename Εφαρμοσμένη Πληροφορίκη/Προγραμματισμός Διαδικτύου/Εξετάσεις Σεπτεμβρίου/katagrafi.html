@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Καταγραφή Στοιχείων </title>
+		<style>
+			#results {
+			background-color: gray;
+			color: white;
+			border-color: green;
+			border-style: solid;
+			width: 50%;
+			height: 400px;
+			padding: 10px;
+			color: black;
+			font-weight: bold;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1> Καταγραφή Στοιχείων </h1>
+
+		<div id="results">
+			<p> Στην φόρμα καταχωρήσατε: <br /> ------------------------------------------------------- </p>
+			<p id="onoma"></p>
+			<p id="ilikia"></p>
+			<p id="plirofories"></p>
+			<p id="perioxi"></p>
+			<p id="email"></p>
+		</div>
+		
+		<script>
+			var qs = (function(a) {
+				if (a == "") return {};
+				var b = {};
+				for (var i = 0; i < a.length; ++i) {
+					var p=a[i].split('=', 2);
+					if (p.length == 1)
+						b[p[0]] = "";
+					else
+						b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+				}
+				return b;
+			})(window.location.search.substr(1).split('&'));
+			
+			document.getElementById("onoma").innerHTML = "- " + qs["input_name"];
+			document.getElementById("ilikia").innerHTML = "- " + qs["ilikia"];
+			document.getElementById("plirofories").innerHTML = "- " + qs["plirofories"];
+			document.getElementById("perioxi").innerHTML = "- " + qs["perioxi"];
+			document.getElementById("email").innerHTML = "- " + qs["input_email"];
+		</script>
+		
+	</body>
+</html>

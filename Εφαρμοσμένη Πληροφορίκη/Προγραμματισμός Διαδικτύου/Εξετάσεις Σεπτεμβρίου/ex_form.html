@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Νησιά και Καλοκαίρι </title>
+		<link rel="stylesheet" href="exSept.css" />
+	</head>
+	
+	<body>
+		<header>
+			<h1> Φόρμα Επικοινωνίας </h1>
+		</header>
+		
+		<nav style="height: 610px;>
+			<a href="p1.html" />Θήρα</a> <br />
+			<a href="p2.html" />Ίος</a> <br />
+			<p style="display:inline">**********</p> <br />
+			<a href="ex_form.html" />Επικοινωνία</a> <br />
+			<a href="ex_form2.html" />Φόρμα MySQL</a> 
+		</nav>
+		
+		<section style="height: 620px;">
+			<h1> Παρακαλώ συμπληρώστε: </h1>
+			
+			<form action="katagrafi.html" method="GET"  target="_blank">
+			
+				<label> Ονοματεπώνυμο </label> <br />
+				<input type="text" name="input_name" size="40" required /> <br /> <br />
+				
+				<label> Ηλικία (διαλέξτε ένα από τα παρακάτω): </label> <br />
+				<input type="radio" name="ilikia" value="Εώς 17" /> Εώς 17 <br />
+				<input type="radio" name="ilikia" value="Από 18 εώς 30" /> Από 18 εώς 30 <br />
+				<input type="radio" name="ilikia" value="Από 31 εώς 40" /> Από 31 εώς 40 <br />
+				<input type="radio" name="ilikia" value="Από 41 εώς 55" /> Από 41 εώς 55 <br />
+				<input type="radio" name="ilikia" value="Από 56 εώς 65" /> Από 56 εώς 65 <br />
+				<input type="radio" name="ilikia" value="Πάνω από 66" /> Πάνω από 66 <br /> <br />
+				
+				<label> Τι πληροφορίες θέλετε (διαλέξτε όσα θέλετε): </label> <br />
+				<input type="checkbox" name="plirofories" value="Ξενοδοχεία" /> Ξενοδοχεία <br />
+				<input type="checkbox" name="plirofories" value="Μουσεία" /> Μουσεία <br />
+				<input type="checkbox" name="plirofories" value="Αξιοθέατα" /> Αξιοθέατα <br />
+				<input type="checkbox" name="plirofories" value="Εστιατόρια-Φαγητό" /> Εστιατόρια-Φαγητό <br /> <br />
+				
+				<label> Περιοχή που σας ενδιαφέρει </label> <br />
+				<select name="perioxi" size="4">
+					<option value="Μακεδονία"> Μακεδονία </option>
+					<option value="Κυκλάδες"> Κυκλάδες </option>
+					<option value="Θράκη"> Θράκη </option>
+					<option value="Άλλη"> Άλλη </option>
+				</select> <br /> <br />
+				
+				<label> e-mail επικοινωνίας: </label> <br />
+				<input type="email" name="input_email" size="40" required /> <br /> <br />
+				
+				<input type="submit" name="submit" value="Υποβολή - Δείξτε στοιχεία" />
+				<input type="reset" name="reset" value="Καθάρισμα" />
+			</form>
+		</section>
+		
+		<aside style="height: 610px;>
+			<a href="index.html" /> Επιστροφή στην αρχική σελίδα </a>
+		</aside>
+		
+		<footer>
+			<p>Copyright &copy; Σεπτέμβριος 2015 - Παναγιώτης Γιαννουτάκης </p>
+		</footer>
+	</body>
+</html>
